@@ -1,5 +1,6 @@
 # lambda
-This is a small lambda calculus interpreter.
+This is a small lambda calculus interpreter, it contains no built-in functions, datatypes etc. so you have to define __everything__ yourself!
+The only small QoL feature is that natural numbers (1, 2, ...) get parsed to their respective church encoding (`\f.\a.f a`, `\f.\a.f (f a))`, ...) and the interpreter tries to parse results as some standard church encodings.
 
 ## Usage
 For best results you should run it using Nix, but using plain cabal should work in most cases as well!
